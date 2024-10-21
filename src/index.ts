@@ -14,10 +14,6 @@ app.use(cors());
 
 app.use("/api/auth/", authRoute);
 
-app.post("/", async (req: Request, res: Response) => {
-  res.status(200).send({ data: "success" });
-});
-
 app.listen(3000, async () => {
   console.log("server started on localhost:3000");
 });
